@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+    background: #efefef;
+    font-size: 16px;
+    color: #3A4DC6;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+
+/* For grid system for display */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* For iteam spaced between each other  */
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
+/* For item relative next to each other */
+
+.left-side {
+    display: flex;
+}
+
+
+/* For sll item in uppercase and fix margin */
+
+.nav-wrap>.left-side>div {
+    margin-right: 20px;
+    font: size 0.9em;
+    text-transform: uppercase;
+}
+
+
+/* For grid system for hovering effect */
+
+.nav-wrap-link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 1.0s;
+}
+
+.nav-wrap-link a {
+    color: saddlebrown;
+    text-decoration: none;
+    transition: color 1.0s;
+}
+
+
+/* For grid hovering effect */
+
+.nav-wrap-link:hover {
+    border-bottom: 1px solid black;
+}
+
+
+/* For grid hovering effect */
+
+.nav-wrap-link a:hover {
+    color: black;
+}
+
+#loginbox {
+    position: relative;
+    margin: 5% auto;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box {
+    position: relative;
+    top: 50px;
+    left: 0;
+    box-sizing: content-box;
+    padding: 40px;
+    width: 300px;
+    height: 600px;
+    float: right;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input [type="submit"] {
+    margin-bottom: 29px;
+    width: 120px;
+    height: 32px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+input[type="submit"]:focus {
+    background: #ff5722;
+    transition: 0.2s ease;
+}
+
+.right-box {
+    position: relative;
+    top: 50px;
+    left: 0;
+    box-sizing: content-box;
+    padding: 40px;
+    width: 300px;
+    height: 600px;
+    float: right;
+}
